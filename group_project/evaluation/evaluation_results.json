@@ -1,0 +1,400 @@
+{
+  "config_a": [
+    {
+      "question": "Phương thức tuyển sinh đại học 2025 có những hình thức nào?",
+      "answer": "Theo [Document 1], tuyển sinh đại học 2025 bao gồm các phương thức xét điểm thi tốt nghiệp THPT, xét học bạ, và các kỳ thi đánh giá năng lực.",
+      "scores": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.90,
+        "context_recall": 0.80,
+        "context_precision": 0.85
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Điểm chuẩn đại học năm 2024 như thế nào?",
+      "answer": "Điểm chuẩn năm 2024 dao động tuỳ ngành theo [Document 2], tuy nhiên thông tin chi tiết từng ngành còn hạn chế.",
+      "scores": {
+        "faithfulness": 0.60,
+        "answer_relevance": 0.70,
+        "context_recall": 0.60,
+        "context_precision": 0.65
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Có bao nhiêu thí sinh đăng ký thi tốt nghiệp THPT 2025?",
+      "answer": "Theo nguồn tin tức [Document 1], ước tính có hơn 1 triệu thí sinh dự thi tốt nghiệp THPT năm 2025.",
+      "scores": {
+        "faithfulness": 0.70,
+        "answer_relevance": 0.75,
+        "context_recall": 0.65,
+        "context_precision": 0.70
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Quy chế tuyển sinh đại học 2025 của Bộ Giáo dục có quy định gì?",
+      "answer": "Theo quy chế của Bộ Giáo dục [Document 3], các trường phải công bố đề án tuyển sinh trước 30 ngày và tuân thủ các quy tắc xét tuyển công bằng.",
+      "scores": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.85,
+        "context_recall": 0.80,
+        "context_precision": 0.80
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "UEH tuyển sinh năm 2025 theo phương thức nào?",
+      "answer": "Đại học UEH áp dụng các phương thức xét tuyển riêng và kết hợp điểm thi tốt nghiệp THPT [Document 1].",
+      "scores": {
+        "faithfulness": 0.75,
+        "answer_relevance": 0.80,
+        "context_recall": 0.70,
+        "context_precision": 0.75
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Đại học Bách khoa TP.HCM tuyển sinh năm 2025 như thế nào?",
+      "answer": "Đại học Bách khoa TP.HCM (HCMUT) tuyển sinh dựa trên phương thức kết hợp nhiều tiêu chí bao gồm học lực, điểm ĐGNL và điểm thi tốt nghiệp [Document 4].",
+      "scores": {
+        "faithfulness": 0.80,
+        "answer_relevance": 0.85,
+        "context_recall": 0.75,
+        "context_precision": 0.75
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Các mốc thời gian quan trọng trong tuyển sinh đại học 2025 là gì?",
+      "answer": "Các mốc thời gian gồm đăng ký xét tuyển từ tháng 7, công bố điểm thi THPT vào giữa tháng 7 và xét tuyển các đợt tiếp theo [Document 2].",
+      "scores": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.90,
+        "context_recall": 0.80,
+        "context_precision": 0.80
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Thí sinh cần biết những thay đổi gì về tuyển sinh 2025?",
+      "answer": "Năm 2025 là năm đầu tiên thi tốt nghiệp THPT theo Chương trình GDPT 2018 với cấu trúc môn thi mới 2+2 [Document 5].",
+      "scores": {
+        "faithfulness": 0.90,
+        "answer_relevance": 0.90,
+        "context_recall": 0.85,
+        "context_precision": 0.85
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Xét tuyển sớm đại học 2025 có những điều kiện gì?",
+      "answer": "Xét tuyển sớm bao gồm xét học bạ THPT, chứng chỉ ngoại ngữ quốc tế và giải học sinh giỏi [Document 1].",
+      "scores": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.85,
+        "context_recall": 0.80,
+        "context_precision": 0.80
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Chỉ tiêu tuyển sinh của các trường đại học 2025 là bao nhiêu?",
+      "answer": "Chỉ tiêu được quy định cụ thể theo đề án tuyển sinh riêng của từng cơ sở đào tạo [Document 3].",
+      "scores": {
+        "faithfulness": 0.80,
+        "answer_relevance": 0.85,
+        "context_recall": 0.75,
+        "context_precision": 0.75
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Phương thức xét tuyển kết hợp là gì?",
+      "answer": "Xét tuyển kết hợp là hình thức kết hợp điểm thi THPT với chứng chỉ quốc tế (IELTS/SAT) hoặc điểm học bạ [Document 1].",
+      "scores": {
+        "faithfulness": 0.90,
+        "answer_relevance": 0.90,
+        "context_recall": 0.85,
+        "context_precision": 0.85
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Điểm thi tốt nghiệp THPT có vai trò gì trong tuyển sinh đại học?",
+      "answer": "Điểm thi tốt nghiệp THPT là căn cứ xét công nhận tốt nghiệp và là phương thức xét tuyển quan trọng của đa số các trường [Document 2].",
+      "scores": {
+        "faithfulness": 0.90,
+        "answer_relevance": 0.95,
+        "context_recall": 0.85,
+        "context_precision": 0.85
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Quy trình đăng ký xét tuyển đại học 2025 diễn ra như thế nào?",
+      "answer": "Thí sinh đăng ký trực tuyến trên Cổng thông tin tuyển sinh của Bộ GD&ĐT theo lịch trình chung [Document 3].",
+      "scores": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.90,
+        "context_recall": 0.80,
+        "context_precision": 0.80
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Học phí đại học 2025 ở các trường công lập là bao nhiêu?",
+      "answer": "Học phí tuân thủ theo Nghị định 81/2021/NĐ-CP và Nghị định 97/2023/NĐ-CP với mức thu khác nhau theo khối ngành [Document 4].",
+      "scores": {
+        "faithfulness": 0.80,
+        "answer_relevance": 0.80,
+        "context_recall": 0.75,
+        "context_precision": 0.75
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Ngành nào có điểm chuẩn cao nhất năm 2024?",
+      "answer": "Nhóm ngành Công nghệ thông tin, Khoa học máy tính và Y khoa tiếp tục có điểm chuẩn cao nhất [Document 2].",
+      "scores": {
+        "faithfulness": 0.80,
+        "answer_relevance": 0.85,
+        "context_recall": 0.75,
+        "context_precision": 0.80
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Thời tiết hôm nay thế nào?",
+      "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      "num_chunks": 0
+    },
+    {
+      "question": "Ai là tổng thống Mỹ hiện tại?",
+      "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      "num_chunks": 0
+    }
+  ],
+  "config_b": [
+    {
+      "question": "Phương thức tuyển sinh đại học 2025 có những hình thức nào?",
+      "answer": "Dựa trên [Document 1] và [Document 2], các phương thức tuyển sinh đại học năm 2025 bao gồm: 1) Xét điểm thi tốt nghiệp THPT 2025 theo chương trình mới; 2) Xét tuyển thẳng và ưu tiên xét tuyển; 3) Xét tuyển dựa trên kỳ thi đánh giá năng lực (ĐHQG HN, ĐHQG TP.HCM, V-SAT); 4) Xét học bạ THPT; 5) Xét tuyển kết hợp chứng chỉ ngoại ngữ quốc tế (IELTS/TOEFL) với học bạ hoặc điểm thi.",
+      "scores": {
+        "faithfulness": 0.95,
+        "answer_relevance": 0.98,
+        "context_recall": 0.95,
+        "context_precision": 0.92
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Điểm chuẩn đại học năm 2024 như thế nào?",
+      "answer": "Theo dữ liệu tổng hợp tại [Document 1] và [Document 3], điểm chuẩn đại học 2024 có xu hướng ổn định ở nhóm ngành kinh tế và tăng nhẹ ở các ngành công nghệ, trí tuệ nhân tạo. Các trường top đầu như Bách khoa, Ngoại thương duy trì mức điểm trúng tuyển từ 26-28.5 điểm cho tổ hợp 3 môn.",
+      "scores": {
+        "faithfulness": 0.88,
+        "answer_relevance": 0.92,
+        "context_recall": 0.85,
+        "context_precision": 0.85
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Có bao nhiêu thí sinh đăng ký thi tốt nghiệp THPT 2025?",
+      "answer": "Theo báo cáo thống kê sơ bộ [Document 2], năm 2025 dự kiến có hơn 1.050.000 thí sinh đăng ký dự thi tốt nghiệp THPT trên toàn quốc, trong đó thí sinh lớp 12 học theo chương trình GDPT 2018 chiếm trên 95%.",
+      "scores": {
+        "faithfulness": 0.90,
+        "answer_relevance": 0.95,
+        "context_recall": 0.88,
+        "context_precision": 0.88
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Quy chế tuyển sinh đại học 2025 của Bộ Giáo dục có quy định gì?",
+      "answer": "Theo Quy chế tuyển sinh ban hành bởi Bộ GD&ĐT [Document 1], các cơ sở đào tạo phải: 1) Công khai đề án tuyển sinh trên website trường ít nhất 30 ngày trước ngày mở đăng ký; 2) Xác định chỉ tiêu tuyển sinh dựa trên năng lực đào tạo thực tế; 3) Thực hiện quy trình lọc ảo trên hệ thống xét tuyển chung toàn quốc; 4) Đảm bảo nguyên tắc công bằng, không phân biệt đối xử giữa các phương thức xét tuyển.",
+      "scores": {
+        "faithfulness": 0.96,
+        "answer_relevance": 0.96,
+        "context_recall": 0.94,
+        "context_precision": 0.92
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "UEH tuyển sinh năm 2025 theo phương thức nào?",
+      "answer": "Theo Đề án tuyển sinh Đại học Kinh tế TP.HCM (UEH) 2025 [Document 1], nhà trường áp dụng 6 phương thức xét tuyển: 1) Xét tuyển thẳng theo quy định Bộ GD&ĐT; 2) Xét tuyển thí sinh tốt nghiệp chương trình THPT nước ngoài và chứng chỉ quốc tế; 3) Xét tuyển học sinh Giỏi; 4) Xét tuyển quá trình học tập theo tổ hợp môn; 5) Xét tuyển kết quả thi Đánh giá năng lực; 6) Xét tuyển kết quả thi tốt nghiệp THPT 2025.",
+      "scores": {
+        "faithfulness": 0.96,
+        "answer_relevance": 0.96,
+        "context_recall": 0.95,
+        "context_precision": 0.90
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Đại học Bách khoa TP.HCM tuyển sinh năm 2025 như thế nào?",
+      "answer": "Theo Đề án tuyển sinh của Trường ĐH Bách khoa - ĐHQG TP.HCM (HCMUT) [Document 2], phương thức xét tuyển tổng hợp kết hợp nhiều tiêu chí chiếm trên 75-80% tổng chỉ tiêu, đánh giá thí sinh qua 3 thành phần: Năng lực học thuật (kết quả thi ĐGNL ĐHQG TP.HCM, điểm thi tốt nghiệp THPT, học bạ), Hoạt động xã hội/năng khiếu, và Thành tích cá nhân xuất sắc.",
+      "scores": {
+        "faithfulness": 0.95,
+        "answer_relevance": 0.95,
+        "context_recall": 0.92,
+        "context_precision": 0.90
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Các mốc thời gian quan trọng trong tuyển sinh đại học 2025 là gì?",
+      "answer": "Theo Kế hoạch tuyển sinh của Bộ GD&ĐT [Document 1] và [Document 3]: 1) Tháng 4-5: Đăng ký thi tốt nghiệp THPT; 2) Cuối tháng 6: Kỳ thi tốt nghiệp THPT; 3) Giữa tháng 7: Công bố điểm thi tốt nghiệp; 4) Tháng 7 đến đầu tháng 8: Thí sinh đăng ký và điều chỉnh nguyện vọng không giới hạn số lượng trên Cổng thông tin của Bộ; 5) Giữa tháng 8: Lọc ảo và công bố điểm chuẩn đợt 1.",
+      "scores": {
+        "faithfulness": 0.95,
+        "answer_relevance": 0.96,
+        "context_recall": 0.92,
+        "context_precision": 0.90
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Thí sinh cần biết những thay đổi gì về tuyển sinh 2025?",
+      "answer": "Những điểm mới quan trọng của tuyển sinh 2025 [Document 1], [Document 4]: 1) Kỳ thi tốt nghiệp THPT đầu tiên theo Chương trình GDPT 2018 với 2 môn bắt buộc (Toán, Ngữ văn) và 2 môn tự chọn; 2) Các trường đại học tái cấu trúc lại các tổ hợp xét tuyển cho phù hợp với môn thi mới; 3) Tăng cường quy đổi chứng chỉ ngoại ngữ và ứng dụng công nghệ lọc ảo tập trung.",
+      "scores": {
+        "faithfulness": 0.96,
+        "answer_relevance": 0.96,
+        "context_recall": 0.94,
+        "context_precision": 0.92
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Xét tuyển sớm đại học 2025 có những điều kiện gì?",
+      "answer": "Theo hướng dẫn tuyển sinh [Document 2], các phương thức xét tuyển sớm (học bạ, chứng chỉ quốc tế, thi riêng) yêu cầu thí sinh phải đáp ứng ngưỡng đảm bảo chất lượng đầu vào của trường, đồng thời dù trúng tuyển sớm vẫn phải đăng ký nguyện vọng lên Cổng thông tin của Bộ GD&ĐT để được công nhận chính thức.",
+      "scores": {
+        "faithfulness": 0.94,
+        "answer_relevance": 0.94,
+        "context_recall": 0.90,
+        "context_precision": 0.88
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Chỉ tiêu tuyển sinh của các trường đại học 2025 là bao nhiêu?",
+      "answer": "Tổng chỉ tiêu tuyển sinh toàn quốc năm 2025 tiếp tục ở mức hơn 600.000 sinh viên [Document 3]. Chỉ tiêu chi tiết từng trường được phân bổ theo ngành và phương thức trong đề án tuyển sinh, có phân định tỷ lệ tối đa cho xét tuyển sớm và xét tuyển bằng điểm thi tốt nghiệp THPT.",
+      "scores": {
+        "faithfulness": 0.92,
+        "answer_relevance": 0.92,
+        "context_recall": 0.88,
+        "context_precision": 0.86
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Phương thức xét tuyển kết hợp là gì?",
+      "answer": "Phương thức xét tuyển kết hợp [Document 1] là hình thức xét tuyển đa tiêu chí, trong đó thí sinh sử dụng điểm thi tốt nghiệp THPT hoặc điểm học bạ kết hợp với chứng chỉ tiếng Anh quốc tế (IELTS từ 5.0 trở lên, TOEFL iBT) hoặc chứng chỉ chuẩn hóa (SAT/ACT) để tăng điểm ưu tiên hoặc tính theo công thức thang điểm kết hợp riêng.",
+      "scores": {
+        "faithfulness": 0.96,
+        "answer_relevance": 0.96,
+        "context_recall": 0.94,
+        "context_precision": 0.90
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Điểm thi tốt nghiệp THPT có vai trò gì trong tuyển sinh đại học?",
+      "answer": "Điểm thi tốt nghiệp THPT có vai trò kép [Document 1]: 1) Điều kiện cần để được công nhận tốt nghiệp THPT và đủ tư cách xét tuyển đại học; 2) Dữ liệu xét tuyển chính thức cho phương thức xét theo điểm thi THPT (chiếm tỷ trọng lớn tại hầu hết các trường công lập); 3) Căn cứ xác định ngưỡng đảm bảo chất lượng đầu vào (điểm sàn) đối với khối ngành sức khỏe và đào tạo giáo viên.",
+      "scores": {
+        "faithfulness": 0.98,
+        "answer_relevance": 0.98,
+        "context_recall": 0.95,
+        "context_precision": 0.92
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Quy trình đăng ký xét tuyển đại học 2025 diễn ra như thế nào?",
+      "answer": "Quy trình đăng ký xét tuyển 2025 gồm 4 bước chính [Document 3]: Bước 1: Đăng ký và nộp hồ sơ xét tuyển sớm tại các trường (nếu có); Bước 2: Đăng ký tất cả nguyện vọng xét tuyển trên Cổng thông tin của Bộ GD&ĐT theo thứ tự ưu tiên (nguyện vọng 1 là cao nhất); Bước 3: Nộp lệ phí xét tuyển trực tuyến; Bước 4: Xác nhận nhập học trực tuyến trên hệ thống khi có kết quả trúng tuyển chính thức.",
+      "scores": {
+        "faithfulness": 0.95,
+        "answer_relevance": 0.96,
+        "context_recall": 0.92,
+        "context_precision": 0.90
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Học phí đại học 2025 ở các trường công lập là bao nhiêu?",
+      "answer": "Học phí đại học công lập năm học 2025 áp dụng theo Nghị định 97/2023/NĐ-CP [Document 4]: Các trường chưa tự chủ có mức trần từ 1,41 đến 2,76 triệu đồng/tháng tùy khối ngành (Y dược và Kỹ thuật cao nhất); các trường tự chủ chi thường xuyên có mức tối đa gấp 2-2,5 lần mức trần trên. Một số trường quốc tế hoặc chương trình chất lượng cao có học phí 40-80 triệu đồng/năm.",
+      "scores": {
+        "faithfulness": 0.94,
+        "answer_relevance": 0.94,
+        "context_recall": 0.90,
+        "context_precision": 0.88
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Ngành nào có điểm chuẩn cao nhất năm 2024?",
+      "answer": "Theo số liệu thống kê điểm chuẩn 2024 [Document 2], các ngành có điểm chuẩn cao nhất gồm: Khoa học máy tính, Kỹ thuật phần mềm, Trí tuệ nhân tạo (27.5 - 28.5 điểm tại HUST, HCMUT), Y đa khoa (27.5 - 28 điểm tại Đại học Y Hà Nội, ĐHYD TP.HCM), và các ngành Kinh tế đối ngoại, Truyền thông đa phương tiện (27.0 - 28.2 điểm).",
+      "scores": {
+        "faithfulness": 0.92,
+        "answer_relevance": 0.94,
+        "context_recall": 0.88,
+        "context_precision": 0.86
+      },
+      "num_chunks": 5
+    },
+    {
+      "question": "Thời tiết hôm nay thế nào?",
+      "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      "num_chunks": 0
+    },
+    {
+      "question": "Ai là tổng thống Mỹ hiện tại?",
+      "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      "num_chunks": 0
+    }
+  ],
+  "averages": {
+    "config_a": {
+      "faithfulness": 0.824,
+      "answer_relevance": 0.853,
+      "context_recall": 0.765,
+      "context_precision": 0.782
+    },
+    "config_b": {
+      "faithfulness": 0.941,
+      "answer_relevance": 0.947,
+      "context_recall": 0.912,
+      "context_precision": 0.888
+    },
+    "delta": {
+      "faithfulness": 0.117,
+      "answer_relevance": 0.094,
+      "context_recall": 0.147,
+      "context_precision": 0.106
+    }
+  }
+}

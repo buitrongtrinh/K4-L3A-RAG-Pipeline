@@ -1,0 +1,87 @@
+[
+  {
+    "question": "Phương thức tuyển sinh đại học 2025 có những hình thức nào?",
+    "expected_answer": "Tuyển sinh đại học 2025 có nhiều phương thức xét tuyển bao gồm: xét điểm thi tốt nghiệp THPT, xét học bạ, xét tuyển kết hợp, tuyển thẳng và xét tuyển sớm.",
+    "expected_context": "Phương thức tuyển sinh đại học 2025 bao gồm xét điểm thi tốt nghiệp THPT, xét học bạ, xét tuyển kết hợp"
+  },
+  {
+    "question": "Điểm chuẩn đại học năm 2024 như thế nào?",
+    "expected_answer": "Điểm chuẩn đại học năm 2024 có sự biến động tùy theo từng trường và ngành. Nhiều trường đã công bố điểm chuẩn với mức dao động khác nhau.",
+    "expected_context": "điểm chuẩn đại học 2024"
+  },
+  {
+    "question": "Có bao nhiêu thí sinh đăng ký thi tốt nghiệp THPT 2025?",
+    "expected_answer": "Hơn 1 triệu thí sinh đã đăng ký thi tốt nghiệp THPT năm 2025.",
+    "expected_context": "hơn 1 triệu thí sinh đăng ký thi tốt nghiệp THPT 2025"
+  },
+  {
+    "question": "Quy chế tuyển sinh đại học 2025 của Bộ Giáo dục có quy định gì?",
+    "expected_answer": "Quy chế tuyển sinh đại học 2025 của Bộ Giáo dục và Đào tạo quy định về các phương thức xét tuyển, quy trình đăng ký, chỉ tiêu tuyển sinh và các điều kiện xét tuyển.",
+    "expected_context": "quy chế tuyển sinh đại học 2025 bộ giáo dục đào tạo"
+  },
+  {
+    "question": "UEH tuyển sinh năm 2025 theo phương thức nào?",
+    "expected_answer": "Đại học Kinh tế TP.HCM (UEH) năm 2025 tuyển sinh theo đề án tuyển sinh riêng với nhiều phương thức kết hợp.",
+    "expected_context": "đề án tuyển sinh UEH 2025"
+  },
+  {
+    "question": "Đại học Bách khoa TP.HCM tuyển sinh năm 2025 như thế nào?",
+    "expected_answer": "Đại học Bách khoa TP.HCM (HCMUT) có đề án tuyển sinh năm 2025 với các phương thức xét tuyển riêng.",
+    "expected_context": "đề án tuyển sinh Bách khoa HCMUT 2025"
+  },
+  {
+    "question": "Các mốc thời gian quan trọng trong tuyển sinh đại học 2025 là gì?",
+    "expected_answer": "Các mốc thời gian quan trọng trong tuyển sinh đại học 2025 bao gồm thời gian đăng ký, thời gian thi, thời gian công bố điểm và thời gian xét tuyển.",
+    "expected_context": "mốc thời gian tuyển sinh đại học 2025"
+  },
+  {
+    "question": "Thí sinh cần biết những thay đổi gì về tuyển sinh 2025?",
+    "expected_answer": "Tuyển sinh đại học 2025 có nhiều thay đổi quan trọng mà thí sinh cần nắm rõ, bao gồm các điều chỉnh về phương thức xét tuyển và quy trình đăng ký.",
+    "expected_context": "thay đổi quan trọng tuyển sinh 2025"
+  },
+  {
+    "question": "Xét tuyển sớm đại học 2025 có những điều kiện gì?",
+    "expected_answer": "Xét tuyển sớm đại học 2025 cho phép thí sinh nộp hồ sơ trước kỳ thi tốt nghiệp THPT, thường dựa trên học bạ, chứng chỉ quốc tế hoặc kết quả kỳ thi riêng.",
+    "expected_context": "xét tuyển sớm đại học 2025"
+  },
+  {
+    "question": "Chỉ tiêu tuyển sinh của các trường đại học 2025 là bao nhiêu?",
+    "expected_answer": "Chỉ tiêu tuyển sinh đại học năm 2025 được các trường công bố riêng theo từng ngành và phương thức xét tuyển.",
+    "expected_context": "chỉ tiêu tuyển sinh đại học 2025"
+  },
+  {
+    "question": "Phương thức xét tuyển kết hợp là gì?",
+    "expected_answer": "Phương thức xét tuyển kết hợp là phương thức sử dụng nhiều tiêu chí đánh giá cùng lúc, bao gồm điểm thi tốt nghiệp THPT, học bạ, chứng chỉ quốc tế hoặc kết quả phỏng vấn.",
+    "expected_context": "phương thức xét tuyển kết hợp"
+  },
+  {
+    "question": "Điểm thi tốt nghiệp THPT có vai trò gì trong tuyển sinh đại học?",
+    "expected_answer": "Điểm thi tốt nghiệp THPT là một trong những tiêu chí quan trọng để xét tuyển đại học, được sử dụng trong phương thức xét điểm thi.",
+    "expected_context": "điểm thi tốt nghiệp THPT tuyển sinh đại học"
+  },
+  {
+    "question": "Quy trình đăng ký xét tuyển đại học 2025 diễn ra như thế nào?",
+    "expected_answer": "Quy trình đăng ký xét tuyển đại học 2025 bao gồm các bước đăng ký nguyện vọng, nộp hồ sơ và xác nhận nhập học theo lịch trình của Bộ Giáo dục.",
+    "expected_context": "quy trình đăng ký xét tuyển đại học 2025"
+  },
+  {
+    "question": "Học phí đại học 2025 ở các trường công lập là bao nhiêu?",
+    "expected_answer": "Học phí đại học 2025 ở các trường công lập có mức khác nhau tùy theo ngành và trường, được quy định theo đề án tuyển sinh của từng trường.",
+    "expected_context": "học phí đại học 2025"
+  },
+  {
+    "question": "Ngành nào có điểm chuẩn cao nhất năm 2024?",
+    "expected_answer": "Các ngành có điểm chuẩn cao nhất năm 2024 thường thuộc nhóm ngành y dược, công nghệ thông tin và kinh tế tại các trường top.",
+    "expected_context": "ngành điểm chuẩn cao nhất 2024"
+  },
+  {
+    "question": "Thời tiết hôm nay thế nào?",
+    "expected_answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có. Câu hỏi này nằm ngoài phạm vi dữ liệu tuyển sinh đại học.",
+    "expected_context": "Không có context phù hợp"
+  },
+  {
+    "question": "Ai là tổng thống Mỹ hiện tại?",
+    "expected_answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có. Câu hỏi này nằm ngoài phạm vi dữ liệu tuyển sinh đại học.",
+    "expected_context": "Không có context phù hợp"
+  }
+]
