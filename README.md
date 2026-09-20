@@ -43,6 +43,24 @@ pytest -q
 streamlit run app.py
 ```
 
+## Evaluation
+
+The 15 grounded cases are in
+`group_project/evaluation/golden_dataset.json`; each one identifies the source
+context that supports its expected answer. Run the quality gates with:
+
+```bash
+pytest tests/test_acceptance.py -q
+pytest tests/test_contracts.py -q
+```
+
+The A/B protocol compares dense-only retrieval with hybrid retrieval plus RRF
+at the same `top_k`, prompt, generator and evaluator. See
+`group_project/evaluation/RESULT.md` for the reproducible procedure and the
+current measurement status. Do not report RAGAS numbers until BGE-M3 is cached,
+the dense index is built, and both configurations have been evaluated on the
+same cases.
+
 ## Lộ trình 3 giờ
 
 | Mốc                  | Thời gian | Kết quả cần có                           |

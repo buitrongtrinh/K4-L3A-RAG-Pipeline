@@ -1,0 +1,77 @@
+[
+  {
+    "question": "UEH có bao nhiêu loại học bổng theo quy định?",
+    "expected_answer": "Quy định nêu 06 loại học bổng UEH.",
+    "expected_context": "quy_dinh_hoc_bong.md, Điều 2: Học bổng UEH có 06 loại học bổng."
+  },
+  {
+    "question": "Suất học bổng toàn phần của UEH được tính như thế nào?",
+    "expected_answer": "Suất toàn phần bằng 100% mức học phí trung bình của 15 tín chỉ, tương đương một học kỳ, của khóa hoặc chương trình xét học bổng.",
+    "expected_context": "quy_dinh_hoc_bong.md, Điều 4: Suất học bổng Toàn phần."
+  },
+  {
+    "question": "Suất học bổng bán phần có giá trị bao nhiêu?",
+    "expected_answer": "Suất bán phần bằng 50% mức học phí trung bình của 15 tín chỉ, tương đương một học kỳ.",
+    "expected_context": "quy_dinh_hoc_bong.md, Điều 4: Suất học bổng Bán phần."
+  },
+  {
+    "question": "Sinh viên chính quy cần đăng ký tối thiểu bao nhiêu tín chỉ để xét học bổng khuyến khích học tập?",
+    "expected_answer": "Sinh viên phải đăng ký ít nhất 15 tín chỉ trong học kỳ xét học bổng, trừ trường hợp đặc biệt do UEH xem xét và thông báo.",
+    "expected_context": "quy_dinh_hoc_bong.md, Điều 7 khoản 1: số tín chỉ đăng ký phải lớn hơn hoặc bằng 15."
+  },
+  {
+    "question": "Mức học bổng khuyến khích học tập loại Xuất sắc là bao nhiêu?",
+    "expected_answer": "Mức Xuất sắc bằng 150% mức học bổng toàn phần.",
+    "expected_context": "quy_dinh_hoc_bong.md, Điều 8: Mức bổng loại Xuất sắc."
+  },
+  {
+    "question": "Hồ sơ miễn giảm học phí và hỗ trợ chi phí học tập cần những giấy tờ nào?",
+    "expected_answer": "Cần Đơn hoặc Giấy đề nghị theo mẫu của Trường và giấy tờ chứng minh đối tượng được xét.",
+    "expected_context": "article_01.md, mục 3 Yêu cầu về hồ sơ."
+  },
+  {
+    "question": "Thời hạn nộp hồ sơ miễn giảm học phí đợt 1 năm 2026 là khi nào?",
+    "expected_answer": "Đợt 1 diễn ra từ 03/3/2026 đến hết 05/3/2026.",
+    "expected_context": "article_01.md, mục 4 Thời gian và phương thức nộp hồ sơ."
+  },
+  {
+    "question": "Nộp hồ sơ miễn giảm học phí ở đâu?",
+    "expected_answer": "Nộp trực tiếp tại Ban Đào tạo, bàn số 11, phòng A0.14, số 17 Phạm Ngọc Thạch, phường Xuân Hòa, TP. Hồ Chí Minh.",
+    "expected_context": "article_01.md, mục 4 Phương thức nộp."
+  },
+  {
+    "question": "Sinh viên hộ nghèo hoặc cận nghèo phải nộp hồ sơ miễn giảm học phí theo tần suất nào?",
+    "expected_answer": "Phải nộp hồ sơ đề nghị xét miễn giảm học phí và hỗ trợ chi phí học tập theo từng học kỳ.",
+    "expected_context": "article_01.md, mục 5 Một số lưu ý."
+  },
+  {
+    "question": "Sinh viên không thanh toán nội trú phí đúng hạn sẽ bị xử lý thế nào?",
+    "expected_answer": "Sinh viên sẽ bị xử lý theo Quy định Nội trú ký túc xá.",
+    "expected_context": "article_03.md: thông báo về việc thực hiện nghiêm túc nội trú phí."
+  },
+  {
+    "question": "Sinh viên khóa mới được thực hiện bảo hiểm y tế vào thời gian nào?",
+    "expected_answer": "Sau khi hoàn thành đóng phí bảo hiểm; sinh viên khóa mới thực hiện trong tháng 9 và tháng 10.",
+    "expected_context": "article_05.md, mục Thời điểm thực hiện bảo hiểm."
+  },
+  {
+    "question": "Sinh viên các khóa cũ được thực hiện bảo hiểm y tế vào thời gian nào?",
+    "expected_answer": "Sinh viên các khóa cũ thực hiện trong tháng 11 và tháng 12.",
+    "expected_context": "article_05.md, mục Thời điểm thực hiện bảo hiểm."
+  },
+  {
+    "question": "Những chương trình nào không thuộc đối tượng học bổng hỗ trợ học tập cho sinh viên liên thông và vừa làm vừa học?",
+    "expected_answer": "Các chương trình liên kết đào tạo, đào tạo theo nhu cầu và đào tạo ngắn hạn không thuộc đối tượng tham gia học bổng này.",
+    "expected_context": "article_04.md, mục 3 Học bổng Hỗ trợ học tập cho liên thông chính quy và vừa làm vừa học."
+  },
+  {
+    "question": "Sau khi bổ sung đủ hồ sơ hoàn cảnh khó khăn, học bổng hỗ trợ đột xuất được xử lý trong bao lâu?",
+    "expected_answer": "Kiểm tra và phản hồi được thực hiện trong 01 đến 03 ngày làm việc sau khi người học bổ sung đầy đủ hồ sơ.",
+    "expected_context": "article_04.md, mục 4 Học bổng Hỗ trợ đột xuất."
+  },
+  {
+    "question": "Vi phạm thi hộ hoặc nhờ người thi hộ lần đầu bị kỷ luật thế nào?",
+    "expected_answer": "Lần vi phạm đầu bị đình chỉ học tập 01 năm; vi phạm tiếp theo bị buộc thôi học.",
+    "expected_context": "quy_che_dao_tao_dai_hoc.md, Điều 20 khoản 2."
+  }
+]
