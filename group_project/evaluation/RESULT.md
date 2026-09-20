@@ -4,15 +4,15 @@
 
 | Field | Value |
 | --- | --- |
-| Evaluation date | 2026-09-20 |
-| Framework and version | RAGAS 0.4.3 (declared dependency); offline contract and acceptance checks run with pytest 9.1.1 |
-| Evaluator model | Gemini evaluator is configured, but no metric run was completed in this environment |
-| Generator model | Gemini provider is configured; no generation run is recorded here |
+| Evaluation date | 2026-09-20T10:28:36Z |
+| Framework and version | Fixed-prompt LLM-as-judge runner; DeepSeek `deepseek-chat`; per-case artifact `ab_results.json` |
+| Evaluator model | DeepSeek `deepseek-chat` |
+| Generator model | DeepSeek `deepseek-chat` |
 | Embedding model | `BAAI/bge-m3` |
-| Corpus version/commit | UEH policy corpus, integration commit `514cf94` |
+| Corpus version/commit | UEH policy corpus, commit `5bb72be` |
 | Golden dataset size | 15 grounded cases in `golden_dataset.json` |
 | `top_k` | 5 |
-| Fallback threshold and calibration | 0.30; must be calibrated on the golden set once the embedding model is available locally |
+| Fallback threshold and calibration | 0.30; PageIndex fallback excluded because it was not configured for either A/B arm |
 
 ## Configurations
 
@@ -25,42 +25,48 @@ Both configurations are specified to use the same golden dataset, prompt, genera
 
 | Metric | Config A | Config B | Delta B−A |
 | --- | ---: | ---: | ---: |
-| Faithfulness | Not measured | Not measured | Not measured |
-| Answer relevance | Not measured | Not measured | Not measured |
-| Context recall | Not measured | Not measured | Not measured |
-| Context precision | Not measured | Not measured | Not measured |
-| **Average** | **Not measured** | **Not measured** | **Not measured** |
+| Faithfulness | 0.9667 | 0.9667 | 0.0000 |
+| Answer relevance | 0.8333 | 0.8333 | 0.0000 |
+| Context recall | 0.8333 | 0.8200 | -0.0133 |
+| Context precision | 0.6200 | 0.6133 | -0.0067 |
+| **Average** | **0.8133** | **0.8083** | **-0.0050** |
 
-Numerical RAGAS scores are intentionally not fabricated. The BGE-M3 model was not cached, and this environment could not resolve Hugging Face to download the missing model files. Consequently, a dense index and a like-for-like A/B generation run could not be completed. The Gemini credential alone does not resolve that dependency.
+The runner executed all 30 combinations (15 cases × 2 configurations) after
+building a 475-chunk BGE-M3/Chroma collection. The stored per-case answer,
+metric values, rationale, source IDs and retrieval time are in
+`group_project/evaluation/ab_results.json`. Scores are model-judge signals,
+not an independent human verdict: the same fixed DeepSeek model generated and
+scored both configurations, so they are appropriate for the controlled delta
+but should be reviewed alongside the saved answers.
 
 ## A/B comparison
 
-- Cấu hình tốt hơn: Chưa kết luận khi chưa có phép đo cùng điều kiện.
-- Evidence: Contract test confirms the comparison path is structurally valid: dense and BM25 return the common schema, RRF is applied once, and fallback uses the original dense score.
-- Trade-off về latency/cost: Config B adds BM25 scoring and RRF but should not add a second embedding call; the actual latency and token cost must be captured during the reproducible run.
+- Cấu hình tốt hơn: **Config A (dense-only)**, nhưng chỉ hơn rất nhẹ trên recall, precision và average; faithfulness và relevance hòa nhau.
+- Evidence: Dense-only đạt average `0.8133` so với `0.8083` của hybrid-RRF. Cả hai cùng bỏ lỡ chunk chứa thời hạn và địa điểm nộp hồ sơ, nên RRF hiện không cải thiện các case quan trọng này.
+- Trade-off về latency/cost: Mean retrieval wall-time ghi nhận A `0.6145s`, B `0.0444s`. A chạy trước nên chịu model warm-up; không dùng chênh lệch này làm kết luận production. B vẫn thêm BM25/RRF nhưng không thêm lời gọi LLM; cần benchmark interleaved để kết luận latency.
 
 ## Worst performers
 
 | # | Question | Config | Faithfulness | Relevance | Recall | Precision | Failure stage | Root cause |
 | --: | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Multi-condition scholarship eligibility | Pending run | Not measured | Not measured | Not measured | Not measured | retrieval | Multiple conditions can be split across chunks. |
-| 2 | Tuition-support eligibility and documents | Pending run | Not measured | Not measured | Not measured | Not measured | retrieval/generation | Notice includes annex references and several beneficiary groups. |
-| 3 | Insurance onboarding for new students | Pending run | Not measured | Not measured | Not measured | Not measured | data | Long notice contains repeated navigation content near the answer. |
+| 1 | Thời hạn nộp hồ sơ miễn giảm học phí đợt 1 năm 2026 | A & B | 1.00 | 0.00 | 0.00 | 0.00 | retrieval | Chunk `news/article_01.md::chunk-9` chứa mốc 03–05/3/2026 nhưng không vào top-5. |
+| 2 | Nộp hồ sơ miễn giảm học phí ở đâu? | A & B | 1.00 | 0.00 | 0.00 | 0.00 | retrieval | Cùng bằng chứng ở `news/article_01.md::chunk-9` bị bỏ lỡ; model từ chối đúng theo context thiếu. |
+| 3 | Hồ sơ miễn giảm học phí và hỗ trợ chi phí học tập cần những giấy tờ nào? | Hybrid-RRF | 0.50 | 0.50 | 0.30 | 0.40 | retrieval | Top-5 có phụ lục/mẫu đơn nhưng không có chunk-9 chứa cả hai yêu cầu hồ sơ. |
 
 ## Recommendations
 
 | Priority | Action | Evidence from failure analysis | Expected impact | How to verify |
 | ---: | --- | --- | --- | --- |
-| 1 | Cache or pre-download `BAAI/bge-m3`, then rebuild ChromaDB. | The current host cannot download the model, blocking dense evaluation. | Enables the actual A/B run. | `python -m src.task4_chunking_indexing` completes and persists the collection. |
-| 2 | Run both configurations over all 15 golden cases and save per-case outputs. | No numerical metric result is currently claimed. | Produces reproducible faithfulness, relevance, recall and precision scores. | Execute the RAGAS runner with the same model, prompt and `top_k`. |
-| 3 | Review chunks around multi-condition policies and navigation-heavy notices. | The identified hard cases need precise supporting context. | Improves context precision and grounded citations. | Compare per-case context precision before and after chunking changes. |
+| 1 | Add heading-aware chunk boundaries or parent-context expansion for article notices. | Both worst questions miss the same chunk-9 although neighboring chunks are retrieved. | Raises recall for procedural questions without changing the LLM. | Re-index, rerun the same artifact and require chunk-9 in top-5 for cases 7 and 8. |
+| 2 | Add query expansion for procedural terms such as “thời hạn”, “địa điểm”, “nộp hồ sơ”. | Dense and BM25 both ranked broad notice text above the answer-bearing chunk. | Improves recall of exact notice fields. | Compare the same 15 cases; report recall delta and top-5 source IDs. |
+| 3 | Re-run A/B with configurations interleaved and an independent evaluator model. | Sequential warm-up invalidates the observed retrieval-time comparison; generator and judge currently share DeepSeek. | Produces defensible latency and evaluation estimates. | Save a second artifact with alternating A/B order and evaluator metadata. |
 
 ## Reproducible evaluation procedure
 
 1. Cache the embedding model and run `python -m src.task4_chunking_indexing`.
-2. Run Config A and Config B for every item in `golden_dataset.json`, saving answer and retrieved contexts.
-3. Use the same Gemini evaluator, generator, prompt and `top_k=5` for both configurations.
-4. Compute RAGAS faithfulness, answer relevance, context recall and context precision, then replace the `Not measured` cells with the exported values and link the per-case artifact.
+2. Configure `LLM_PROVIDER=deepseek`, `DEEPSEEK_API_KEY` and optionally `DEEPSEEK_MODEL` in `.env`.
+3. Run `HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 python -m group_project.evaluation.run_ab_evaluation`.
+4. Inspect `ab_results.json`, then regenerate this table from its 30 records; retain the same `top_k=5`, model and prompt for both A/B arms.
 
 ## Quality gates run on this integration
 

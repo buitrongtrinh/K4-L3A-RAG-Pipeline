@@ -57,9 +57,9 @@ pytest tests/test_contracts.py -q
 The A/B protocol compares dense-only retrieval with hybrid retrieval plus RRF
 at the same `top_k`, prompt, generator and evaluator. See
 `group_project/evaluation/RESULT.md` for the reproducible procedure and the
-current measurement status. Do not report RAGAS numbers until BGE-M3 is cached,
-the dense index is built, and both configurations have been evaluated on the
-same cases.
+current measurement status. The saved `ab_results.json` contains the 30
+per-case results, source IDs, model-judge metrics and retrieval timings used
+to produce the report table.
 
 ## Lộ trình 3 giờ
 

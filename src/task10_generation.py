@@ -76,6 +76,28 @@ def call_llm(system_prompt: str, user_message: str) -> str:
         )
         return (response.choices[0].message.content or "").strip()
 
+    if provider == "deepseek":
+        from openai import OpenAI
+
+        api_key = os.getenv("DEEPSEEK_API_KEY", "").strip()
+        if not api_key:
+            raise RuntimeError("DEEPSEEK_API_KEY is not configured")
+        response = OpenAI(
+            api_key=api_key,
+            base_url=os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com").strip(),
+        ).chat.completions.create(
+            model=os.getenv("DEEPSEEK_MODEL", "").strip() or model or "deepseek-chat",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_message},
+            ],
+            temperature=TEMPERATURE,
+            top_p=TOP_P,
+        )
+        return (response.choices[0].message.content or "").replace(
+            "<|endoftext|>", ""
+        ).strip()
+
     if provider == "gemini":
         from google import genai
 
@@ -105,7 +127,7 @@ def call_llm(system_prompt: str, user_message: str) -> str:
             block.text for block in response.content if getattr(block, "type", "") == "text"
         ).strip()
 
-    raise ValueError("LLM_PROVIDER must be openai, gemini, or anthropic")
+    raise ValueError("LLM_PROVIDER must be openai, deepseek, gemini, or anthropic")
 
 
 def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
