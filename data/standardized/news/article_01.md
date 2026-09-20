@@ -1,0 +1,55 @@
+# Bộ GD&ĐT thay đổi kế hoạch siết phương thức xét tuyển đại học
+
+**Source:** https://dantri.com.vn/giao-duc/bo-gddt-thay-doi-ke-hoach-siet-phuong-thuc-xet-tuyen-dai-hoc-20260917222502528.htm
+
+**Crawled:** 2026-09-20T17:05:12.790470
+
+---
+
+## (Dân trí) - Chỉ trong vòng nửa ngày, Bộ GD&ĐT đã thay đổi kế hoạch dự kiến siết phương thức xét tuyển đại học. Tại dự thảo này, Bộ GD&ĐT đề xuất không sử dụng điểm cộng do cơ sở đào tạo tự quy định.
+
+Hơn 4 tiếng sau khi công bố dự kiến siết phương thức xét tuyển đại học 2027 vào chiều17/9, Bộ GD&ĐT đã có điều chỉnh lộ trình áp dụng.
+
+Theo thông tin dự thảo được đăng tải trên trang web chính thức của Bộ GD&ĐT cho thấy, cơ quan này có sửa đổi, bổ sung một số quy địnhtuyển sinhvà đào tạo đại học.
+
+Tại dự thảo công bố đầu tiên, Bộ GD&ĐT dự kiến các trường đại học được sử dụng tối đa 5 phương thức nhưng mỗi ngành, chương trình đào tạo chỉ dùng một phương thức tuyển sinh, trừ xét tuyển thẳng và nhóm cử tuyển.
+
+Sau đó vài tiếng, Bộ GD&ĐT tiếp tục phát đi dự thảo có điều chỉnh so với nội dung công bố trên cổng thông tin trước đó.
+
+Cụ thể tại bản dự thảo mới về thông tư sửa đổi, bổ sung một số quy định về việc xác định số lượng tuyển sinh, chương trình đào tạo, tuyển sinh và đào tạo cao đẳng ngànhgiáo dụcmầm non, đại học và sau đại học, công bố tối nay (17/9), Bộ GD&ĐT đã có điều chỉnh kế hoạch và lộ trình xét tuyển đại học.
+
+Thí sinh thi tốt nghiệp THPT 2026 (Ảnh: Phương Quyên).
+
+Theo đó, Bộ GD&ĐT vẫn giới hạn phương thức xét tuyển đại học nhưng theo lộ trình.
+
+Cụ thể, năm 2027, các trường đại học áp dụng tối đa 5 phương thức tuyển sinh. Trong đó, mỗi ngành/chương trình đào tạo áp dụng 3 phương thức xét tuyển.
+
+Từ năm 2028, giảm xuống còn 1 phương thức đăng ký xét tuyển vào từng ngành/chương trình đào tạo, trừ xét tuyển thẳng và cử tuyển.
+
+Đây là điều chỉnh lớn nhất của dự thảo so với thông tin Bộ GD&ĐT đã đăng tải trước đó trên website của Bộ.
+
+Theo lý giải của Bộ GD&ĐT, khi các thang đo giữa các phương thức xét tuyển (chẳng hạn điểm thi tốt nghiệp THPT, điểm xét tuyển học bạ…) chưa thực sự tương đương, việc chia một ngành thành nhiều cửa xét tuyển có thể làm thí sinh cùng năng lực được đối xử khác nhau.
+
+Do đó, việc giảm phương thức xét tuyển là để mở rộng cơ hội bình đẳng, không phải giảm cơ hội tiếp cận của mỗi thí sinh.
+
+“Mỗi phương thức phải bảo đảm mọi thí sinh đủ điều kiện đều có thể tham gia, công bố rõ tiêu chí và sử dụng một thang điểm chung.
+
+Cơ sở đào tạo có trách nhiệm lựa chọn phương thức phù hợp với yêu cầu đầu vào của chương trình; kết quả thi riêng, học bạ hoặc chứng chỉ vẫn có thể được sử dụng khi được cấu trúc minh bạch trong phương thức đã công bố”, theo Bộ GD&ĐT.
+
+Bộ GD&ĐT đề xuất không sử dụng điểm cộng do cơ sở đào tạo tự quy định (Ảnh minh họa: Mạnh Quân).
+
+Cũng tại dự thảo này, Bộ GD&ĐT đề xuất không sử dụng điểm cộng do cơ sở đào tạo tự quy định như: Điểm cộng các thành tích, chứng chỉ hoặc tiêu chí bổ sung bởi điểm cộng có thể tạo bất bình đẳng.
+
+Thứ nhất,cơ hội tiếp cận chứng chỉ, kỳ thi hoặc hoạt động được cộng điểm khác nhau theo điều kiện kinh tế, địa bàn và khả năng chi trả.
+
+Thứ hai,cùng một loại chứng chỉ nhưng mức quy đổi, mức cộng và tổ hợp áp dụng khác nhau giữa các trường.
+
+Thứ ba,một năng lực có thể được ghi nhận hai lần - vừa là thành phần điểm xét tuyển, vừa được cộng thêm - làm sai lệch thứ tự thí sinh.
+
+Thứ tư,ở nhóm điểm cao, chỉ một phần điểm cộng nhỏ cũng có thể thay đổi kết quả trúng tuyển, dù chưa chứng minh được mức điểm đó phản ánh tốt hơn khả năng học tập của chương trình.
+
+“Thí sinh có chứng chỉ năng lực ngoại ngữ vẫn có thể được quy đổi vào môn ngoại ngữ trong tổ hợp xét tuyển theo quy tắc công khai, hoặc dùng để chứng minh yêu cầu đầu vào của chương trình đào tạo bằng ngoại ngữ.
+
+Khi đó, chứng chỉ được sử dụng như một minh chứng năng lực có liên quan trực tiếp, thay vì trở thành một khoản điểm cộng ngoài thang đo. Nguyên tắc là một năng lực được ghi nhận một lần, theo cùng quy tắc đối với mọi thí sinh”, Bộ GD&ĐT khẳng định.
+
+Theo Bộ GD&ĐT, dự thảo đang trong quá trình lấy ý kiến, cơ quan này sẽ tiếp tục đánh giá tác động, lắng nghe thí sinh, cơ sở đào tạo và chuyên gia trước khi ban hành.
